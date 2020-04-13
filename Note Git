@@ -1,0 +1,90 @@
+Git 
+
+Cde de base :
+. pwd permet de connaitre mon répertoire courant (pwd et entrée)
+. ls permet de voir la liste des fichiers et répertoire contenus dans le répertoire courant 
+. l si je veux ses elements sous forme de liste ( -l et eventuellement -a pour encore plus d'infos)
+. ls la = plus rapide
+. cd = me placer dans un répertoire (cd.. retour en arrière et cd ~ répertoire pal)
+. touch = créer un fichier
+. mkdir = créer un dossier
+.cat = afficher le contenu d'un fichier
+
+
+installation et execution de git bash
+
+- Définir son nom et email
+git config --global user.name "nom"
+git config --global user.email "email"
+
+taper ensuite git, si ca marche un txt en anglais aparait
+
+Petite astuce : utilisez la touche "Insert" de votre clavier pour coller du texte dans git bash (ctrl + v ne fonctionnera sur Windows)
+
+Créer un dossier et on se place dedans
+puis créer un dossier monPremierRepo
+
+Pour activer un dossier comme repository Git, 
+il suffit de se placer dans ce dossier avec
+le Terminal puis d'utiliser la commande git init.
+ 
+Pour gérer un repository, Git génère un index 
+de tous les fichiers dont il doit faire le suivi.
+Lorsque vous créez un fichier dans un repository,
+vous devez donc l'ajouter à l'index Git à l'aide
+de la commande git add nomDeVotreFichier.extension. Par exemple :
+
+se placer dans son dossier Repository et faire un git init 
+
+puis git add nomdemonfichier.extension
+
+enregistrer les modifications de votre repository avec la commande  git commit
+
+. git log = voir tout les commits
+pour sortir du log on appuie sur Q
+
+. git checkout = pour se positionner sur un commit donné de mon historique
+
+. git checkout master = pour le commit le plus récent
+
+. git revert = permet de créer un nouveau commit qui fait l'inverse du précédent (en cas d'erreur)
+
+. git commit --amend -m "nouveau message" = modifier le message d'un commit
+Attention ! on ne peut modifier un commit que s'il n'a pas déjà été pushé
+
+. je n'ai pas encore fait mon nouveau commit mais je veux annuler tout les changements
+que je n'ai pas encore commités 
+-> git reset -- hard
+
+. git commit -a = ajouter tous les fichiers déjà présents dans l'index au commit 
+
+. si git status retourne : "nothing added to commit but untracked files present"
+-> il existe des fichiers qui ne sont pas ajoutés à l'index
+
+-------------------------------------------------
+LES REMOTES
+
+Il faut avoir un backup de son code sur une autre machine au ca où
+on aurait un souci
+On va donc le envoyer sur un remote (cad une autre machine qui peut être interne ou externe (genre GitHUB))
+
+--------------------------------------------------
+GitHUB
+
+Service en ligne qui permet d'héberger ses repositories de code
+username : Jen0320
+
+----------------------------------------------------
+
+. git clone lienfourniparGitHub = copier un repository sur notre machine
+
+git clone https://github.com/facebook/react.git
+
+---------------------------------------------------
+CREER UN REPO SUR GitHUB
+
+create new repository
+mettre son nom, sa descrption, public
+et cocher le read me pour ajouter le repo sur notre pc si ca n'a jamais été fait
+
+
